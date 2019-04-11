@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+<div class="container">
+    <h1>
+        Power BI Sample
+    </h1>
+
+    <div id="SignIn">
+        <button class="btn btn-primary" onclick="signIn()">Sign In</button>
+    </div>
+    Selected customer:
+    <span id="customerName" class="font-weight-bold">None</span>
+    Selected product:
+    <span id="productName" class="font-weight-bold">None</span>
+    <button id="CreateSalesOrder" class="btn btn-primary" onclick="createSalesOrder()" disabled="true">Create
+        Sales Order</button>
+
+    <div id="WelcomeMessage" class="content">
+    </div>
+    <div id="embedContainer" class="content" style="height:500px">
+    </div>
+</div class="container">
+
+
+    <script src="node_modules/adal-angular/dist/adal.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/es6-promise/dist/es6-promise.js"></script>
+    <script src="node_modules/powerbi-client/dist/powerbi.js"></script>
+
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/embed.js"></script>
+    <script src="scripts/auth.js"></script>
+
+</body>
+
+</html>
